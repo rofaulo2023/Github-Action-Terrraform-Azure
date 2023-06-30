@@ -1,11 +1,11 @@
 resource "azurerm_resource_group" "demo" {
   name     = "example-resources"
-  location = "east us"
+  location = "East US"
 }
 
 ##  Demo now
 resource "azurerm_storage_account" "StorageAccountDemo" {
-  name                     = "satestant000012"
+  name                     = "sarctest000012"
   resource_group_name      = azurerm_resource_group.demo.name
   location                 = azurerm_resource_group.demo.location
   account_tier             = "Standard"
@@ -13,6 +13,6 @@ resource "azurerm_storage_account" "StorageAccountDemo" {
 
   tags = {
     video = "azure"
-    channel = "CloudQuickLabs"
+    channel = "rofaulo-test"
   }
 }
